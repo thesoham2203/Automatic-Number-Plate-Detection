@@ -1,4 +1,4 @@
-### Next-Gen Toll Collection: ANPR-Driven Automation with RFID Redundancy
+# Next-Gen Toll Collection: ANPR-Driven Automation with RFID Redundancy
 
 ## Overview
 
@@ -22,7 +22,7 @@ Secure Transactions: Ensures encrypted data transfer and user authentication.
 
 ## System Components
 
-# Hardware:
+### Hardware:
 
 Raspberry Pi 4: Core processing unit.
 
@@ -36,7 +36,7 @@ Relay Module: Boom barrier control.
 
 Power Supply and SD Card: For system operation.
 
-# Software:
+### Software:
 
 Plate Recognizer API: For ANPR.
 
@@ -46,7 +46,7 @@ Node.js: For backend scripting.
 
 REST APIs: For communication.
 
-## Workflow
+### Workflow
 
 Vehicle Detection: The ultrasonic sensor detects a vehicle's presence.
 
@@ -105,6 +105,6 @@ Smart Cities: Integrates with broader IoT ecosystems to provide real-time traffi
 
 Secure Facilities: Controls access to restricted areas using ANPR and RFID.
 
-Demo
+## Demo
 
 Click here to watch the demo video (Replace # with the actual video link)
