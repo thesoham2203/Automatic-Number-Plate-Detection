@@ -108,4 +108,4 @@ node watchVideo.js
 
 ## Demo
 
-![Demo](images/demo.mp4)
+[Download Demo Video](images/demo.mp4)
