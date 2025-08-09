@@ -534,7 +534,7 @@ function App() {
                           <td>
                             {new Date(task.created_at).toLocaleDateString()}
                           </td>
-                          <td>{task.file_size_mb?.toFixed(2) || '0.00'} MB</td>
+                          <td>{task.file_size_mb?.toFixed(2) || "0.00"} MB</td>
                           <td>
                             <button
                               onClick={() => deleteTask(task.task_id)}
