@@ -1,9 +1,55 @@
 {
+  "name": "anpr-toll-system",
+  "version": "2.0.0",
+  "description": "Advanced Automatic Number Plate Recognition system for toll collection",
+  "main": "watchVideo.js",
+  "scripts": {
+    "start": "node watchVideo.js",
+    "capture": "node onlyCaptureVideo.js",
+    "test": "jest",
+    "lint": "eslint *.js",
+    "setup": "bash setup.sh",
+    "dev": "nodemon watchVideo.js",
+    "health": "node -e \"const http = require('http'); http.get('http://localhost:3001/health', (res) => { console.log('Health check:', res.statusCode === 200 ? 'OK' : 'FAIL'); });\""
+  },
+  "keywords": [
+    "anpr",
+    "toll-collection",
+    "license-plate-recognition",
+    "iot",
+    "raspberry-pi",
+    "computer-vision",
+    "toll-management"
+  ],
+  "author": "ANPR Development Team",
+  "license": "MIT",
   "dependencies": {
     "@google-cloud/datastore": "^7.0.0",
     "@google-cloud/vision": "^2.4.2",
-    "axios": "^1.1.3",
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "form-data": "^4.0.0",
     "log-timestamp": "^0.3.0",
-    "node-fetch": "^2.6.7"
-  }
+    "node-fetch": "^2.7.0",
+    "winston": "^3.11.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.50.0",
+    "jest": "^29.7.0",
+    "nodemon": "^3.0.1",
+    "supertest": "^6.3.3"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thesoham2203/Automatic-Number-Plate-Detection.git"
+  },
+  "bugs": {
+    "url": "https://github.com/thesoham2203/Automatic-Number-Plate-Detection/issues"
+  },
+  "homepage": "https://github.com/thesoham2203/Automatic-Number-Plate-Detection#readme"
 }
